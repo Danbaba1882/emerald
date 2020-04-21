@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService} from '../cart.service';
 import { PRODUCTS } from '../productsData';
+import { Products} from '../products';
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
@@ -8,12 +9,12 @@ import { PRODUCTS } from '../productsData';
 })
 export class ProductsComponent implements OnInit {
   products = PRODUCTS;
-  addTocart(product){
+  addToCart(product){
     this.cartService.addToCart(product);
-    window.alert('prouct added');
+    window.alert('product added');
   }
   constructor(
-    private cartService: CartService
+    private cartService: CartService,
   ) { }
 
   ngOnInit(): void {

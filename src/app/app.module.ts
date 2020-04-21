@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { Routes, RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
@@ -18,7 +18,11 @@ import { ProductsComponent } from './products/products.component'; // <-- NgMode
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot([
+      { path: 'shoppingcart', component: ShoppingCartComponent },
+      { path: 'products', component: ProductsComponent }
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
