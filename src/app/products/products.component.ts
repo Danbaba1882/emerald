@@ -11,7 +11,7 @@ export class ProductsComponent implements OnInit {
   products = PRODUCTS;
   addToCart(product){
     this.cartService.addToCart(product);
-    window.alert('product added');
+    console.log('added');
   }
   constructor(
     private cartService: CartService,

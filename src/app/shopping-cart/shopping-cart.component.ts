@@ -7,12 +7,14 @@ import { CartService} from '../cart.service';
 })
 export class ShoppingCartComponent implements OnInit {
 items;
+shippingcosts;
   constructor(
     private cartService: CartService
   ) { }
 
   ngOnInit(): void {
     this.items = this.cartService.getItems();
+    this.shippingcosts = this.cartService.getsp();
   }
 
 }
