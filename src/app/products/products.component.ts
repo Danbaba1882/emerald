@@ -8,11 +8,14 @@ import { Products} from '../products';
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent implements OnInit {
+  quantity = 1;
   products = PRODUCTS;
   addToCart(product){
+    product.quantity = this.quantity;
     this.cartService.addToCart(product);
     console.log('added');
   }
+
   constructor(
     private cartService: CartService,
   ) { }
