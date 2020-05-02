@@ -6,7 +6,7 @@
     <p>Price: {{product.price}}</p>
     <div class="form-inline">
       <label for="">Quantity</label>
-      <input type="number" class="form-control" name="quantity"  [(ngModel)]="quantity" id="quantity">
+      <input type="number" class="form-control" name="quantity" #quantit [(ngModel)]="quantity" [value]="1" (keyup)="getinput($event)" id="quantity">
     </div>
     
     <form action="" class="form-inline justify-content-center">
@@ -45,6 +45,7 @@
               </button>
             </div>
             <div class="modal-body">
+              
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque fugiat placeat laboriosam commodi rem perferendis voluptas amet? A harum voluptatum eum, reiciendis commodi necessitatibus ad velit facilis tenetur, rem molestiae!
                 
               </p>

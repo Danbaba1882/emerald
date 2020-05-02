@@ -8,11 +8,12 @@ import { HttpClient } from '@angular/common/http';
 export class CartService {
   cartstorage = localStorage;
   total;
+  i;
   items = [];
   createCart(){
     if (this.cartstorage){
     this.items = [];
-    this.cartstorage.setItem('cartname', 'acart');
+    this.cartstorage.setItem('cartname', 'Angular Shopping Cart' );
     console.log('cart created');
     }
     else{
@@ -41,6 +42,16 @@ getcartname(){
     console.log( this.cartstorage.getItem('cartcontent'));
     console.log( con);
     return con;
+
+  }
+
+  gettotal(){
+    const con = JSON.parse(this.cartstorage.getItem('cartcontent'));
+    for (this.i = 0; this.i < con.length; this.i++){
+      this.total += con[this.i].quantity * con[this.i].price;
+      console.log(this.total);
+      return this.total;
+    }
   }
   // clearing shopping cart
   clearCart(){

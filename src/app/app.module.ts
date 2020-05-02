@@ -8,13 +8,15 @@ import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { ProductsComponent } from './products/products.component'; // <-- NgModel lives here
 import { HttpClientModule } from '@angular/common/http';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { PaymentpageComponent } from './paymentpage/paymentpage.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ShoppingCartComponent,
     ProductsComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    PaymentpageComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +25,9 @@ import { CheckoutComponent } from './checkout/checkout.component';
     FormsModule,
     RouterModule.forRoot([
       { path: 'shoppingcart', component: ShoppingCartComponent },
-      { path: 'products', component: ProductsComponent }
+      { path: 'products', component: ProductsComponent },
+      { path: 'checkout', component: CheckoutComponent },
+      { path: 'paymentpage', component: PaymentpageComponent }
     ])
   ],
   providers: [],
