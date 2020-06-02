@@ -1,0 +1,13 @@
+.image {
+    background: url('src/assets/IMAGES/webdeb9.jpg');
+    background-size: 100% 600px;
+    height: 600px;
+}
+
+.smessage {
+    background: url('src/assets/IMAGES/webdev3.png');
+    background-size: 100% 700px;
+    height: 700px;
+}
+
+

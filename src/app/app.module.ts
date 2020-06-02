@@ -4,30 +4,27 @@ import { Routes, RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
-import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
-import { ProductsComponent } from './products/products.component'; // <-- NgModel lives here
-import { HttpClientModule } from '@angular/common/http';
-import { CheckoutComponent } from './checkout/checkout.component';
-import { PaymentpageComponent } from './paymentpage/paymentpage.component';
+import { HomeComponent } from './home/home.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ShoppingCartComponent,
-    ProductsComponent,
-    CheckoutComponent,
-    PaymentpageComponent
+    HomeComponent,
+    NavbarComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
-    HttpClientModule,
     AppRoutingModule,
     FormsModule,
     RouterModule.forRoot([
-      { path: 'shoppingcart', component: ShoppingCartComponent },
-      { path: 'products', component: ProductsComponent },
-      { path: 'checkout', component: CheckoutComponent },
-      { path: 'paymentpage', component: PaymentpageComponent }
+      { path: '', component: HomeComponent },
+      { path: 'login', component: LoginComponent },
+      { path: 'register', component: RegisterComponent },
     ])
   ],
   providers: [],
