@@ -8,6 +8,13 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { AboutComponent } from './about/about.component';
+import { ServicesComponent } from './services/services.component';
+import { AdmindashboardComponent } from './admindashboard/admindashboard.component';
+import { ContactComponent } from './contact/contact.component';
+import { ProjectComponent } from './project/project.component';
+import { FooterComponent } from './footer/footer.component';
+import { NavbarOComponent } from './navbar-o/navbar-o.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +23,13 @@ import { RegisterComponent } from './register/register.component';
     NavbarComponent,
     LoginComponent,
     RegisterComponent,
+    AboutComponent,
+    ServicesComponent,
+    AdmindashboardComponent,
+    ContactComponent,
+    ProjectComponent,
+    FooterComponent,
+    NavbarOComponent,
   ],
   imports: [
     BrowserModule,
@@ -25,6 +39,11 @@ import { RegisterComponent } from './register/register.component';
       { path: '', component: HomeComponent },
       { path: 'login', component: LoginComponent },
       { path: 'register', component: RegisterComponent },
+      { path: 'services', component: ServicesComponent },
+      { path: 'project', component: ProjectComponent },
+      { path: 'contact', component: ContactComponent },
+      { path: 'about', component: AboutComponent },
+      { path: 'admin', component: AdmindashboardComponent }
     ])
   ],
   providers: [],

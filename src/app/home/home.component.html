@@ -1,14 +1,66 @@
-<app-navbar></app-navbar>
+<nav
+      class="navbar navbars navbar-expand-lg navbar-dark scrolled justify-content-sm-start fixed-top"
+      style="background-color:midnightblue"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand order-1 order-lg-0 ml-lg-0 ml-2 mr-auto" routerLink="/"
+        > <b>EMERALDS TECH HUB</b> </a
+        >
+        <button class="navbar-toggler align-self-start" type="button" data-toggle="collapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse bg-dark p-3 p-lg-0 mt-lg-0 d-flex flex-column flex-lg-row flex-xl-row justify-content-lg-end mobileMenu"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav align-self-stretch">
+            <li class="nav-item active">
+              <a class="nav-link" routerLink="/"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" routerLink="/about"
+                  >About</a
+                >
+              </li>
+              
+              <li class="nav-item active">
+                  <a class="nav-link" routerLink="/services"
+                    >Services</a
+                  >
+                </li>
+
+                <li class="nav-item active">
+                  <a class="nav-link" routerLink="/contact"
+                    >Contact</a
+                  >
+                </li>
+           
+                <li class="nav-item active">
+                    <a class="nav-link" routerLink="/project"
+                      > <b>Start a Project</b> </a
+                    >
+                  </li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
 <div class="image">
     <div class="container-fluid" >
 		<div class="row">
 			<div class="col-md-2"></div>
 			<div class="col-md-8">
-					<h1 class="text-center" style="padding-top:250px; color: white !important">EMERALDS SOFTWARE COMPANY</h1>
+					<h1 class="text-center h1" style="padding-top:100px; color: white !important"> EMERALDS TECH HUB </h1>
+					<h5 class="text-center" style="color:white">Welcome to Emerald Tech Hub; An inventive webs and mobile 
+						app design, development, Digital and Social Media Marketing and Software Development company established 
+						to deploy the best skillset available to provide high quality web and mobile app related services for you.</h5>
 					<hr style="background-color:white">
 					<div class="form-inline justify-content-center">
-						<button class="btn btn-lg mr-2 rounded-0" style="background-color:midnightblue; color:white">Login</button>
-						<button class="btn btn-lg mr-2 rounded-0" style="background-color:midnightblue; color:white">Signup</button>
+						<button class="btn btn-lg mr-2 rounded-0" style="background-color:midnightblue; color:white">START A PROJECT</button>
 					</div>
 			</div>
 			<div class="col-md-2"></div>
@@ -16,23 +68,52 @@
 		
 	</div>
 </div>
+
+<div class="promo mt-4">
+	<div class="container-fluid">
+			<div class="row" style="padding-top: 150px">
+					<div class="col-lg-6">
+						<h2 class="text-center" style="color: white"> <b></b> Get a Website for your Business, School, Organisation, or Company for as low as 45,000 Naira</h2>
+					</div>
+					<div class="col-lg-6">
+						<ul>
+							<li>1 year free Hosting</li>
+							<li>6 Months free Website maintainance and Management</li>
+							<li>10 percent discount for two or more Websites or mobile Application</li>
+							<li>6 Months Free Database management and maintainance</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-4"></div>
+					<div class="col-lg-4 mb-2" style="padding-top:20px">
+						<button class="btn btn-md rounded-0 form-control" style="background-color:midnightblue;color:white">GET YOUR WEBSITE</button>
+					</div>
+					<div class="col-lg-4"></div>
+				</div>
+	</div>
+	
+</div>
+
 <div class="container-fluid mt-4">
 	<h1 class="text-center">OUR SERVICES</h1>
 	<hr>
 </div>
-<div class="container-fluid mb-4">
-		<div class="row mb-4">
-				<div class="col-md-4">
-						<h3 class="text-center">E-commerce Websites</h3>
+<div class="container-fluid mt-2">
+		<div class="row">
+				<div class="col-md-4 mb-3">
+						<h3 class="text-center">Business and E-commerce Websites</h3>
 						<hr>
 						<div class="card rounded-0 shadow">
 								<img class="card-img-ight" style="height:250px;width:100%" alt="e-commerce services" src="assets/IMAGES/ecommerce3.png">
-								<p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam libero ut nisi ipsum molestiae, fac
-									ere consequatur! Eligendi, itaque tenetur illo sint quisquam esse, 
-									a ad, vel possimus provident est excepturi?</p>
+								<p class="text-center">Living in the digital world, a website is crucial for any business. 
+									If you have a business and don’t have a website, you are probably losing out on opportunities for 
+									your business. A website can be used to accomplish many different marketing 
+									strategies to help your business grow. </p>
 						</div>
 			</div>
-				<div class="col-md-4">
+				<div class="col-md-4 mb-3">
 						<h3 class="text-center">School Websites and Management System</h3>
 						<hr>
 						<div class="card rounded-0 shadow">
@@ -42,39 +123,53 @@
 									a ad, vel possimus provident est excepturi?</p>
 						</div>
 				</div>
-				<div class="col-md-4">
-						<h3 class="text-center">Mobile Applications</h3>
+				<div class="col-md-4 mb-3">
+						<h3 class="text-center">Mobile Applications and Progressive Web Applications</h3>
 						<hr>
 						<div class="card rounded-0 shadow">
 								<img class="card-img-ight" style="height:250px;width:100%" alt="e-commerce services" src="assets/IMAGES/ecommerce4.png">
-								<p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam libero ut nisi ipsum molestiae, fac
-									ere consequatur! Eligendi, itaque tenetur illo sint quisquam esse, 
-									a ad, vel possimus provident est excepturi?</p>
+								<p class="text-center">Presently, the population of mobile device users stands at over
+									 1 billion globally. So having an app can help increase business visibility and promote the 
+									 growth of business.
+									 Mobile apps can be used to increase sales and customer loyalty because it allows businesses to communicate 
+									 directly with their customers via In-app purchases, ads, promotions, and notifications sent to 
+									 customers' phone via mobile apps.
+									</p>
 						</div>
 				</div>
 			</div>
-<div class="row mb-4">
-	<div class="col-md-4">
+<div class="row">
+	<div class="col-md-4 mb-3">
 		<h3 class="text-center">Social Media marketing</h3>
 		<hr>
 		<div class="card rounded-0 shadow">
 				<img class="card-img-ight" style="height:250px;width:100%" alt="e-commerce services" src="assets/IMAGES/socialm2.png">
-				<p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam libero ut nisi ipsum molestiae, fac
-					ere consequatur! Eligendi, itaque tenetur illo sint quisquam esse, 
-					a ad, vel possimus provident est excepturi?</p>
+				<p class="text-center">It doesn’t matter if you run a small local shop or a big national company. 
+					Social media is an essential piece of your business marketing strategy.
+
+						Social platforms help you connect with your customers, increase awareness about your brand, 
+						and boost your leads and sales. With more than three billion people around the world using social 
+						media every month, it’s no passing trend.
+						</p>
 		</div>
 	</div>
-	<div class="col-md-4">
-			<h3 class="text-center">Websites Maintainace & Database Management</h3>
+	<div class="col-md-4 mb-3">
+			<h3 class="text-center">Search Engine Optimization</h3>
 			<hr>
 			<div class="card rounded-0 shadow">
 					<img class="" style="height:250px;width:100%" alt="e-commerce services" src="assets/IMAGES/ecommerce3.png">
-					<p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam libero ut nisi ipsum molestiae, fac
-						ere consequatur! Eligendi, itaque tenetur illo sint quisquam esse, 
-						a ad, vel possimus provident est excepturi?</p>
+					<p class="text-center">There are many things about your business that you can’t control. 
+						You can’t control when a new competitor appears, how well your customers react to a 
+						new product launch, or your quarterly profits.
+
+							But with SEO, you can control your rankings. And this means, to some extent, you 
+							can control and see how many visitors come to your website, which directly impacts how many 
+							online sales or leads you get.
+							
+							</p>
 			</div>
 	</div>
-	<div class="col-md-4">
+	<div class="col-md-4 mb-3">
 			<h3 class="text-center">Blogs, News and Media</h3>
 			<hr>
 			<div class="card rounded-0 shadow">
@@ -87,59 +182,66 @@
 </div>
 </div>
 
-<h3 class="text-center">CONTACT US</h3>
-<hr>
-
-<div class="smessage" style="width:100%;height: 700px;">
+<div class="smessage" style="width:100%;height:100%;">
 	
 <div class="row">
-	<div class="col-lg-6 mt-2" style="border-right: 2px solid white">
+	<div class="col-lg-6">
 			<div class="container mt-4">
-					<div class="card shadow rounded-0">
-							<form action="/message">
-							<div class="form-group">
-								<label for="name" class="label-control pl-2">Name</label>
-								<input type="text" name="name" id="name" class="form-control pl-2 rounded-0">
-							</div>
-							<div class="form-group">
-									<label for="mobile" class="label-control">Mobile Number</label>
-									<input type="text" name="mobile" id="mobile" class="form-control rounded-0">
-								</div>
-								<div class="form-group">
-										<label for="email" class="label-control">Email (optional)</label>
-										<input type="text" name="email" id="email" class="form-control rounded-0">
+					<div class="card shadow-lg rounded-0">
+						<div class="container-fluid">
+							<h2 class="text-center">MESSAGE US</h2>
+								<form action="/message">
+									<div class="form-group">
+										<label for="name" class="label-control">Name</label>
+										<input type="text" name="name" id="name" class="form-control pl-2 rounded-0">
 									</div>
 									<div class="form-group">
-											<label for="project" class="label-control">Project Description</label>
-											<textarea type="text" name="project" id="project" rows="12" class="form-control rounded-0"></textarea>
+											<label for="mobile" class="label-control">Mobile Number</label>
+											<input type="text" name="mobile" id="mobile" class="form-control rounded-0">
 										</div>
-										<button class="btn btn-md rounded-0 form-control" style="background-color:midnightblue; color:white">Submit</button>
-							</form>
+										<div class="form-group">
+												<label for="email" class="label-control">Email (optional)</label>
+												<input type="text" name="email" id="email" class="form-control rounded-0">
+											</div>
+											<div class="form-group">
+													<label for="project" class="label-control">Message</label>
+													<textarea type="text" name="project" id="project" rows="10" class="form-control rounded-0"></textarea>
+												</div>
+												<button class="btn btn-md rounded-0 form-control" style="background-color:midnightblue; color:white">SEND MESSAGE</button>
+									</form>
+						</div>
+						
 							
 						</div>
 				</div>
 		
 	</div>
-	<div class="col-lg-6"></div>
+	<div class="col-lg-6 mt-4">
+			<div class="card  shadow-lg rounded-0">
+					<div class="container-fluid">
+						<h3 class="text-center font-weight-light">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, officia maiores 
+							saepe alias ipsam nisi tempore, ipsa ipsum mollitia voluptatum nihil minima sit ullam sint,
+							 debitis ducimus ratione quos! Dolore.
+
+							 Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque eaque doloremque accusamus sequi odi
+							 o consequatur dolorum non dolore itaque minus assumenda natus aliquid, modi quam odit, ex iu
+							 re numquam! Temporibus?
+							 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex distinctio beatae dolor amet aperiam doloremque, p
+							 ossimus minus nemo officia perferendis sunt illum exercitationem quibusdam quam provident facilis
+							  inventore harum? Eaque?
+
+							  Lorem ipsum dolor, sit amet consectetur adipisicing elit. A quos dolores sit corrupti debitis quae harum eligen
+							   aspernatur saepe dolor consequatur accusantium doloribus impedit sequi quam laboriosam excepturi, 
+							   consectetur tenetur?
+						</h3>
+						<button class="btn mt-2 mb-2 form-control btn-md" style="background-color:midnightblue;color:white">START A PROJECT</button>
+					</div>
+					
+						
+					</div>
+	</div>
 </div>
 </div>
 
-<footer style="background-color:midnightblue; height:300px">
-<div class="row container-fluid pt-4">
-	<div class="col-md-4">
-		<h4 style="color:white"> <b>Our services</b> </h4>
-		<a href="" style="color:white">Web Design and developemet</a><br>
-		<a href="" style="color:white" >Social Media Marketing</a> <br>
-		<a href="" style="color:white">Mobile app developemet</a> <br>
-	</div>
-	<div class="col-md-4" style="color:white">
-		<h4>Follow Us </h4>
-	</div>
-	<div class="col-md-4" style="color:white">
-		<h4>Contact Us </h4>
-		<p>Phone</p>
-		<p>Whatsapp</p>
-		<p>Email</p>
-	</div>
-</div>
-</footer>
+<app-footer></app-footer>

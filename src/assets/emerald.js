@@ -17,7 +17,7 @@ $(document).ready(function() {
     });
 
     $(document).scroll(function () {
-      var $nav = $(".navbar");
+      var $nav = $(".navbars");
       $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
       console.log($nav.height())
     });
