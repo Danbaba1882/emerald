@@ -10,31 +10,94 @@
     height: 100%;
 }
 
+.lm:hover{
+color:white !important;
+background-color: midnightblue;
+}
+
+.line{
+  width: 250px;
+ float: left;
+  height: 3px;
+  background-color: midnightblue;
+  margin-bottom: 5px;
+}
+ul li {
+  color: white;
+  
+  }
+
+  .dropdown:hover > .dropdown-menu{
+    display: block !important;
+  }
+
+  .dropdown:hover > #navbarDropdown{
+    color:white !important;
+    background-color: midnightblue !important;
+    padding-bottom: 10px;
+  }
+
+  .dropdown-item{
+    color: white;
+  }
+  .dropdown-menu{
+    background-color: midnightblue !important;
+  }
+
+  .dropdown-item:hover{
+    color: midnightblue !important;
+  }
+
+  .s:hover {
+    background-color: midnightblue !important;
+  }
+  
+  .promo {
+      background: url('src/assets/IMAGES/webdev3.png');
+      background-size: 100% 600px;
+      height: 600px;
+      filter: blur(3px)
+    
+  }
+
 @media(max-width:576px){
     .image {
         background: url('src/assets/IMAGES/webdeb9.jpg');
-        background-size: 100% 500px;
-        height: 500px;
+        background-size: 100% 550px;
+        height: 620px;
     }
 
     .promo {
         background: url('src/assets/IMAGES/webdev3.png');
-        background-size: 100% 100%;
-        height: 100%;
+        background-size: 100% 110%;
+        height: 620px;
+    }
+
+    .services{
+      margin-top:70px !important;
     }
 }
-    
+ 
 
-ul li {
-color: white
+@media(max-width:320px){
+  .services{
+    margin-top:10px !important;
+  }
+  .hservice{
+    font-size:30px !important;
+  }
 }
 
-.promo {
-    background: url('src/assets/IMAGES/webdev3.png');
-    background-size: 100% 600px;
-    height: 600px;
-  
-}
+    @media(max-width:320){
+      .image {
+        background: url('src/assets/IMAGES/webdeb9.jpg');
+        background-size: 100% 600px;
+        height: 600px;
+    }
+    .h1{
+      padding-top: 70px;
+    }
+    }
 
 
 @media all and (max-width:576px){

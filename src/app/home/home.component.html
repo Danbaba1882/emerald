@@ -4,7 +4,7 @@
     >
       <div class="container-fluid">
         <a class="navbar-brand order-1 order-lg-0 ml-lg-0 ml-2 mr-auto" routerLink="/"
-        > <b>EMERALDS TECH HUB</b> </a
+        > <b>EMERALD TECH HUB</b> </a
         >
         <button class="navbar-toggler align-self-start" type="button" data-toggle="collapse"
         >
@@ -17,30 +17,39 @@
         >
           <ul class="navbar-nav align-self-stretch">
             <li class="nav-item active">
-              <a class="nav-link" routerLink="/"
+              <a class="nav-link s" routerLink="/"
                 >Home <span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item active">
-                <a class="nav-link" routerLink="/about"
+                <a class="nav-link s" routerLink="/about"
                   >About</a
                 >
               </li>
               
               <li class="nav-item active">
-                  <a class="nav-link" routerLink="/services"
-                    >Services</a
-                  >
+									<a class="nav-link dropdown-toggle s dropdown" routerLink="/" id="navbarDropdown" role="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Services
+										</a>
+			<div class="dropdown-menu dropdown-menu-right rounded-0" aria-labelledby="navbarDropdown">
+			<a class="dropdown-item" routerLink="/services/organisations-businesses-and-ecommerce-websites">Business and E-commerce Websites</a>
+			<a class="dropdown-item" routerLink="/services/school-websites-and-management-systems">School Websites and Management Systems</a>
+			<a class="dropdown-item" routerLink="/services/mobile-and-progressive-web-applications">Mobile and Progressive Web Applications</a>
+			<a class="dropdown-item" routerLink="/services/social-media-marketing">Social Media Marketing</a>
+			<a class="dropdown-item" routerLink="/services/email-marketing">Email Marketing</a>
+			<a class="dropdown-item" routerLink="/services/search-engine-optimisation">Search Engine Optimisation</a>								
+			</div>
+                 
                 </li>
 
                 <li class="nav-item active">
-                  <a class="nav-link" routerLink="/contact"
+                  <a class="nav-link s" routerLink="/contact"
                     >Contact</a
                   >
                 </li>
            
                 <li class="nav-item active">
-                    <a class="nav-link" routerLink="/project"
+                    <a class="nav-link s" routerLink="/project"
                       > <b>Start a Project</b> </a
                     >
                   </li>
@@ -54,13 +63,14 @@
 		<div class="row">
 			<div class="col-md-2"></div>
 			<div class="col-md-8">
-					<h1 class="text-center h1" style="padding-top:100px; color: white !important"> EMERALDS TECH HUB </h1>
-					<h5 class="text-center" style="color:white">Welcome to Emerald Tech Hub; An inventive webs and mobile 
-						app design, development, Digital and Social Media Marketing and Software Development company established 
-						to deploy the best skillset available to provide high quality web and mobile app related services for you.</h5>
+					<h1 class="text-center h1" style="padding-top:100px; color: white !important"> EMERALD TECH HUB </h1>
+					<h5 class="text-center" style="color:white"> Welcome to Emerald Tech Hub, A home for developers, technology enthusiats 
+							and an innovative Web and Mobile applications design and development agency, Digital Marketing and Software 
+							Development company aimed at deploying the best technological skillset available for quality 
+							and high performance web and mobile app related services.</h5>
 					<hr style="background-color:white">
 					<div class="form-inline justify-content-center">
-						<button class="btn btn-lg mr-2 rounded-0" style="background-color:midnightblue; color:white">START A PROJECT</button>
+						<button class="btn btn-lg mr-2 rounded-0" style="background-color:midnightblue; color:white"> <a routerLink="/project" style="color:white"> START A PROJECT</a></button>
 					</div>
 			</div>
 			<div class="col-md-2"></div>
@@ -69,145 +79,675 @@
 	</div>
 </div>
 
-<div class="promo mt-4">
+<div class="promo mt-4"></div>
 	<div class="container-fluid">
-			<div class="row" style="padding-top: 150px">
-					<div class="col-lg-6">
-						<h2 class="text-center" style="color: white"> <b></b> Get a Website for your Business, School, Organisation, or Company for as low as 45,000 Naira</h2>
+			<div class="row" style="margin-top:-500px;">
+					<div class="col-md-6 ">
+						<h2 class="text-center" style="color: white;"> Get a Website for your Business, School, Organisation, or Company for as low as 50,000 Naira</h2>
 					</div>
-					<div class="col-lg-6">
+					<div class="col-md-6">
 						<ul>
-							<li>1 year free Hosting</li>
+							<li>3 months free Hosting</li>
 							<li>6 Months free Website maintainance and Management</li>
 							<li>10 percent discount for two or more Websites or mobile Application</li>
-							<li>6 Months Free Database management and maintainance</li>
+							<li>1 year Free Database management and maintainance</li>
 						</ul>
 					</div>
 				</div>
 
 				<div class="row">
-					<div class="col-lg-4"></div>
-					<div class="col-lg-4 mb-2" style="padding-top:20px">
-						<button class="btn btn-md rounded-0 form-control" style="background-color:midnightblue;color:white">GET YOUR WEBSITE</button>
+					<div class="col-md-4"></div>
+					<div class="col-md-4 mb-2" style="padding-top:20px">
+						<button class="btn btn rounded-0 form-control" style="background-color:midnightblue;color:white "><a routerLink="/project" style="color:white"> GET YOUR WEBSITE</a></button>
 					</div>
-					<div class="col-lg-4"></div>
+					<div class="col-md-4"></div>
 				</div>
 	</div>
 	
-</div>
 
-<div class="container-fluid mt-4">
-	<h1 class="text-center">OUR SERVICES</h1>
-	<hr>
-</div>
-<div class="container-fluid mt-2">
-		<div class="row">
-				<div class="col-md-4 mb-3">
-						<h3 class="text-center">Business and E-commerce Websites</h3>
-						<hr>
-						<div class="card rounded-0 shadow">
-								<img class="card-img-ight" style="height:250px;width:100%" alt="e-commerce services" src="assets/IMAGES/ecommerce3.png">
-								<p class="text-center">Living in the digital world, a website is crucial for any business. 
-									If you have a business and don’t have a website, you are probably losing out on opportunities for 
-									your business. A website can be used to accomplish many different marketing 
-									strategies to help your business grow. </p>
-						</div>
-			</div>
-				<div class="col-md-4 mb-3">
-						<h3 class="text-center">School Websites and Management System</h3>
-						<hr>
-						<div class="card rounded-0 shadow">
-								<img class="card-img-ight" style="height:250px;width:100%" alt="e-commerce services" src="assets/IMAGES/schoolm2.png">
-								<p class="text-center font-weight-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam libero ut nisi ipsum molestiae, fac
-									ere consequatur! Eligendi, itaque tenetur illo sint quisquam esse, 
-									a ad, vel possimus provident est excepturi?</p>
-						</div>
+<div class="services" style="margin-top:350px;">
+	<div class="container-fluid services" >
+		<div>
+				<h1 class="text-center hservice">OUR SERVICES</h1>
+				
+		</div>
+		
+		
+	</div>
+	<div class="container-fluid">
+			<h3 class=" sc" style="color:midnightblue">ORGANISATIONS AND COOPERATE WEBSITES</h3>
+			<span class="line"></span>
+			
+		<div class="card mt-4 border-0" style="margin-bottom:50px">
+			<div class="row">
+				<div class="col-md-5">
+					<img class="card-img-ight" style="height:300px;width:100%" alt="e-commerce services" src="assets/IMAGES/org.jpg">
+								
 				</div>
-				<div class="col-md-4 mb-3">
-						<h3 class="text-center">Mobile Applications and Progressive Web Applications</h3>
-						<hr>
-						<div class="card rounded-0 shadow">
-								<img class="card-img-ight" style="height:250px;width:100%" alt="e-commerce services" src="assets/IMAGES/ecommerce4.png">
-								<p class="text-center">Presently, the population of mobile device users stands at over
-									 1 billion globally. So having an app can help increase business visibility and promote the 
-									 growth of business.
-									 Mobile apps can be used to increase sales and customer loyalty because it allows businesses to communicate 
-									 directly with their customers via In-app purchases, ads, promotions, and notifications sent to 
-									 customers' phone via mobile apps.
-									</p>
+				<div class="col-md-5">
+					<p class=" font-weight-light">For organizations interested in having an editable 
+						online brochure that consistently allows them to display their product/services and 
+						introduce new ones to customers, having a corporate website will serve this purpose efficiently. </p>
+						<div class="desktop">
+							<p class="font-weight-light">
+									Regardless of the amount of data you intend to have on this type of website, you can
+									 be assured of a fully-optimized website when you contact us at Lead Web Praxis for a corporate website. 
+							</p>
 						</div>
+						<a href="" class="rounded-0 d-flex justify-content-center btn lm" style="border:2px solid midnightblue;color:midnightblue;">LEARN MORE</a>
+				</div>
+				<div class="col-md-2">
+
 				</div>
 			</div>
-<div class="row">
-	<div class="col-md-4 mb-3">
-		<h3 class="text-center">Social Media marketing</h3>
-		<hr>
-		<div class="card rounded-0 shadow">
-				<img class="card-img-ight" style="height:250px;width:100%" alt="e-commerce services" src="assets/IMAGES/socialm2.png">
-				<p class="text-center">It doesn’t matter if you run a small local shop or a big national company. 
-					Social media is an essential piece of your business marketing strategy.
-
-						Social platforms help you connect with your customers, increase awareness about your brand, 
-						and boost your leads and sales. With more than three billion people around the world using social 
-						media every month, it’s no passing trend.
-						</p>
 		</div>
 	</div>
-	<div class="col-md-4 mb-3">
-			<h3 class="text-center">Search Engine Optimization</h3>
-			<hr>
-			<div class="card rounded-0 shadow">
-					<img class="" style="height:250px;width:100%" alt="e-commerce services" src="assets/IMAGES/ecommerce3.png">
-					<p class="text-center">There are many things about your business that you can’t control. 
-						You can’t control when a new competitor appears, how well your customers react to a 
-						new product launch, or your quarterly profits.
 
-							But with SEO, you can control your rankings. And this means, to some extent, you 
-							can control and see how many visitors come to your website, which directly impacts how many 
-							online sales or leads you get.
-							
-							</p>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-10">
+					<h3 class=" sc" style="color:midnightblue">BUSINESSES AND ECOMMERCE WEBSITES</h3>
+					<span class="line"></span>
 			</div>
-	</div>
-	<div class="col-md-4 mb-3">
-			<h3 class="text-center">Blogs, News and Media</h3>
-			<hr>
-			<div class="card rounded-0 shadow">
+		</div>
+		
+		
+	<div class="card mt-4 border-0" style="margin-bottom:50px">
+		<div class="row">
+				<div class="col-md-2">
+
+					</div>
+			<div class="col-md-5">
+					<p class=" font-weight-light">Living in the digital world, a website is crucial for any business. 
+							If you have a business and don’t have a website, you are probably losing out on opportunities for 
+							your business. A website can be used to accomplish many different marketing 
+							strategies to help your business grow. </p>
+							<p class="font-weight-light">
+									When we embark on a new web design project, we don’t jump straight in to colours, images and content.
+									 Successful projects begin by asking questions, and by truly 
+									 understanding your goals and aspirations.
+					  </p>
+					
+							<a href="" class="rounded-0 d-flex justify-content-center btn lm" style="border:2px solid midnightblue;color:midnightblue;">LEARN MORE</a>
+						
+			</div>
+			<div class="col-md-5">
 					<img class="card-img-ight" style="height:250px;width:100%" alt="e-commerce services" src="assets/IMAGES/ecommerce3.png">
-					<p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam libero ut nisi ipsum molestiae, fac
-						ere consequatur! Eligendi, itaque tenetur illo sint quisquam esse, 
-						a ad, vel possimus provident est excepturi?</p>
+				
 			</div>
+			
+		</div>
 	</div>
 </div>
+<div class="container-fluid">
+		<h3 class=" sc" style="color:midnightblue">SCHOOL WEBSITE AND MANAGEMENT SYSTEM</h3>
+		<span class="line"></span>
+		
+	<div class="card mt-4 border-0" style="margin-bottom:50px">
+		<div class="row">
+			<div class="col-md-5">
+					<img class="card-img-ight" style="height:250px;width:100%" alt="e-commerce services" src="assets/IMAGES/schoolm2.png">
+								
+							
+			</div>
+			<div class="col-md-5">
+					<p class=" font-weight-light">School management is an important part of any
+						 educational system. School authorities all over the world are continiouslt 
+						 engaged in numerous activities to efficently manage school functions and provide
+						  better educational expirience to students</p>
+						  <div class="desktop">
+								
+										 <p class=" font-weight-light">To better perform the functions of school management and 
+											 assure parents of their child’s safety and progress, schools are using school management software nowadays. </p>
+						  </div>
+						  <a href="" class="rounded-0 d-flex justify-content-center lm btn" style="border:2px solid midnightblue;color:midnightblue;">LEARN MORE</a>
+				
+			</div>
+			<div class="col-md-2">
+
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid">
+		
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-10">
+					<h3 class=" sc" style="color:midnightblue">MOBILE AND PROGRESSIVE WEB APPLICATION</h3>
+					<span class="line"></span>
+			</div>
+		</div>
+	<div class="card mt-4 border-0" style="margin-bottom:50px">
+		<div class="row">
+				<div class="col-md-2">
+
+					</div>
+			<div class="col-md-5">
+					<p class="text-center font-weight-light">Presently, the population of mobile device users stands at over
+							1 billion globally. So having an app can help increase business visibility, sales and promote the 
+							growth of business.
+						   </p>	
+						   <a href="" class="rounded-0 d-flex justify-content-center lm btn" style="border:2px solid midnightblue;color:midnightblue;">LEARN MORE</a>
+					
+			</div>
+			<div class="col-md-5">
+					<img class="card-img-ight shadow" style="height:250px;width:100%" alt="e-commerce services" src="assets/IMAGES/ecommerce4.png">
+								
+						  
+			</div>
+		
+		</div>
+	</div>
+</div>
+<div class="container-fluid">
+		<h3 class=" sc" style="color:midnightblue">SOCIAL MEDIA MARKETING</h3>
+		<span class="line"></span>
+		
+	<div class="card mt-4 border-0" style="margin-bottom:50px">
+		<div class="row">
+			<div class="col-md-5">
+					<img class="card-img-ight" style="height:250px;width:100%" alt="e-commerce services" src="assets/IMAGES/socialm2.png">
+						
+			</div>
+			<div class="col-md-5">
+					<p class=" font-weight-light">
+							Social platforms help you connect with your customers, increase awareness about your brand, 
+							and boost your leads and sales. With more than three billion people around the world using social 
+							media every month, it’s no passing trend.
+							</p>
+						  <a href="" class="rounded-0 d-flex justify-content-center lm btn" style="border:2px solid midnightblue;color:midnightblue;">LEARN MORE</a>
+				
+			</div>
+			<div class="col-md-2">
+
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid">
+		
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-10">
+					<h3 class=" sc" style="color:midnightblue">EMAIL MARKETING</h3>
+					<span class="line"></span>
+			</div>
+		</div>
+	<div class="card mt-4 border-0" style="margin-bottom:50px">
+		<div class="row">
+				<div class="col-md-2">
+
+					</div>
+			<div class="col-md-5">
+					<p class="text-center font-weight-light">Presently, the population of mobile device users stands at over
+							1 billion globally. So having an app can help increase business visibility, sales and promote the 
+							growth of business.
+						   </p>	
+						   <a href="" class="rounded-0 d-flex justify-content-center lm btn" style="border:2px solid midnightblue;color:midnightblue;">LEARN MORE</a>
+					
+			</div>
+			<div class="col-md-5">
+					<img class="card-img-ight shadow" style="height:250px;width:100%" alt="e-commerce services" src="assets/IMAGES/ecommerce4.png">
+								
+						  
+			</div>
+		
+		</div>
+	</div>
 </div>
 
-<div class="smessage" style="width:100%;height:100%;">
+<div class="container-fluid">
+		<h3 class=" sc" style="color:midnightblue">SEARCH ENGINE OPTIMIZATION (SEO)</h3>
+		<span class="line"></span>
+		
+	<div class="card mt-4 border-0" style="margin-bottom:50px">
+		<div class="row">
+			<div class="col-md-5">
+					<img class="card-img-ight" style="height:250px;width:100%" alt="e-commerce services" src="assets/IMAGES/socialm2.png">
+						
+			</div>
+			<div class="col-md-5">
+				<p class="font-weight-light">
+					
+						With SEO, you can control your rankings and see how well your customers react to a 
+						new product launch. This means that, to some extent, you 
+						can control and see how many visitors come to your website, which directly impacts how many 
+						online sales or leads you get.
+				</p>
+					<p class=" font-weight-light">
+						SEO is a very valuable tool in 
+						digital marketing as it is a means for showing that a brand
+						has authority in a particular field, helps build relationship 
+						between a brand and prospective customers, as well as an avenue for brand awareness. 
+							</p>
+						  <a href="" class="rounded-0 d-flex justify-content-center lm btn" style="border:2px solid midnightblue;color:midnightblue;">LEARN MORE</a>
+				
+			</div>
+			<div class="col-md-2">
+
+			</div>
+		</div>
+	</div>
+</div>
+	
+</div>
+<h1 class="mt-4 text-center">OUR PARTNERS</h1>
+<h1 class="text-center mt-4">OUR TECHNOLOGIES</h1>
+<div class="container-fluid">
+		<div class="row">
+				<div class="col-md-2 mb-4">
+					<div class="row">
+						<div class="col-6">
+							<a href="" data-toggle="modal" data-target="#angular"><img src="assets/IMAGES/angular.png" style="width:100%;height: 100px;" alt=""></a>	
+						</div>
+						<div class="col-6">
+							<a href="" data-toggle="modal" data-target="#bootstrap"><img src="assets/IMAGES/bootstrap.png" style="width:100%;height: 100px;" alt=""></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2 mb-4">
+						<div class="row">
+							<div class="col-6" >
+								<a href="" data-toggle="modal" data-target="#js"><img src="assets/IMAGES/oga.png" style="width:100%;height: 100px;" alt=""></a>	
+							</div>
+							<div class="col-6">
+								<a href="" data-toggle="modal" data-target="#nodejs"><img src="assets/IMAGES/nodejs.png" style="width:100%;height: 100px;" alt=""></a>	
+							</div>
+						</div>
+					</div>
+				<div class="col-md-2 mb-4">
+					<div class="row">
+						<div class="col-6">
+							<a href="" data-toggle="modal" data-target="#firebase"><img src="assets/IMAGES/firebases.png" style="width:100%;height: 100px;" alt=""></a>	
+						</div>
+						<div class="col-6">
+								<a href="" data-toggle="modal" data-target="#mongodb"><img src="assets/IMAGES/mongodb.png" style="width:100%;height: 100px;" alt=""></a>
+					
+							</div>
+					</div>
+				</div>
+				<div class="col-md-2 mb-4">
+					<div class="row">
+						<div class="col-6">
+							<a href="" data-toggle="modal" data-target="#react"><img src="assets/IMAGES/react.png" style="width:100%;height: 100px;" alt=""></a>	
+						</div>
+						<div class="col-6">
+								<a href="" data-toggle="modal" data-target="#rnative"><img src="assets/IMAGES/rnative.png" style="width:100%;height: 100px;" alt=""></a>
+						
+								</div>
+					</div>
+				</div>
+				<div class="col-md-2 mb-4">
+					<div class="row">
+						<div class="col-6">
+							<a href="" data-toggle="modal" data-target="#mysql"><img src="assets/IMAGES/mysql.png" style="width:100%;height: 100px;" alt=""></a>
+								
+						</div>
+						<div class="col-6">
+								<a href="" data-toggle="modal" data-target="#php"><img src="assets/IMAGES/php2.png" style="width:100%;height: 100px;" alt=""></a>	
+					
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2 mb-4">
+					<div class="row">
+						<div class="col-6">
+							<a href="" data-toggle="modal" data-target="#c"><img src="assets/IMAGES/c++es.png" style="width:100%;height: 100px;" alt=""></a>
+						</div>
+						<div class="col-6">
+								<a href="" data-toggle="modal" data-target="#python"><img src="assets/IMAGES/pytones.jpeg" style="width:100%;height: 100px;" alt=""></a>
+						
+							</div>
+					</div>
+				</div>
+			
+			</div>
+</div>
+
+
+		<div class="container-fluid">
+
+				<div class="modal show" id="js" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+						<div class="modal-dialog modal-dialog-centered" role="document">
+						  <div class="modal-content">
+							<div class="modal-header">
+									<img src="assets/IMAGES/oga.png" class="mr-2" style="width:30px;height: 30px;" alt="">
+							  <h5 class="modal-title" id="exampleModalLongTitle">JAVASCRIPT</h5>
+							  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							  </button>
+							</div>
+							<div class="modal-body">
+							 Javascript is a high level programming language that runs in the browser.
+							</div>
+							<div class="modal-footer">
+							  <button type="button" class="btn btn-danger rounded-0" data-dismiss="modal">Close</button>
+							</div>
+						  </div>
+						</div>
+					  </div>
+				
+					  <div class="modal show" id="angular" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered" role="document">
+							  <div class="modal-content">
+								<div class="modal-header">
+										<img src="assets/IMAGES/angular.png" style="width:30px;height: 30px;" alt="" class="mr-2">
+								  <h5 class="modal-title" id="exampleModalLongTitle">ANGULAR</h5>
+								  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								  </button>
+								</div>
+								<div class="modal-body">
+								  ...
+								</div>
+								<div class="modal-footer">
+								  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								  <button type="button" class="btn btn-primary">Save changes</button>
+								</div>
+							  </div>
+							</div>
+						  </div>
+				
+						  <div class="modal show" id="bootstrap" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+								  <div class="modal-content">
+									<div class="modal-header">
+											<img src="assets/IMAGES/bootstrap.png" style="width:30px;height: 30px;" alt="" class="mr-2">
+									  <h5 class="modal-title" id="exampleModalLongTitle">BOOTSTRAP</h5>
+									  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									  </button>
+									</div>
+									<div class="modal-body">
+									  ...
+									</div>
+									<div class="modal-footer">
+									  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+									  <button type="button" class="btn btn-primary">Save changes</button>
+									</div>
+								  </div>
+								</div>
+							  </div>
+				
+							  <div class="modal show" id="nodejs" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-centered" role="document">
+									  <div class="modal-content">
+										<div class="modal-header">
+												<img src="assets/IMAGES/nodejs.png" class="mr-2" style="width:30px;height: 30px;" alt="">
+											<h5 class="modal-title" id="exampleModalLongTitle">NODEJS</h5>
+										
+										  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										  </button>
+										</div>
+										<div class="modal-body">
+										  ...
+										</div>
+										<div class="modal-footer">
+										  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+										  <button type="button" class="btn btn-primary">Save changes</button>
+										</div>
+									  </div>
+									</div>
+								  </div>
+				
+								  <div class="modal show" id="firebase" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+										<div class="modal-dialog modal-dialog-centered" role="document">
+										  <div class="modal-content">
+											<div class="modal-header">
+											
+												<img src="assets/IMAGES/firebases.png" class="mr-2" style="width:30px;height: 30px;" alt="">
+												<h5 class="modal-title" id="exampleModalLongTitle">FIREBASE</h5>
+											  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+											  </button>
+											</div>
+											<div class="modal-body">
+											  ...
+											</div>
+											<div class="modal-footer">
+											  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+											  <button type="button" class="btn btn-primary">Save changes</button>
+											</div>
+										  </div>
+										</div>
+									  </div>
+				
+									  <div class="modal show" id="mongodb" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+											<div class="modal-dialog modal-dialog-centered" role="document">
+											  <div class="modal-content">
+												<div class="modal-header">
+												
+													<img src="assets/IMAGES/mongodb.png" class="mr-2" style="width:30px;height: 30px;" alt="">
+													<h5 class="modal-title" id="exampleModalLongTitle">MONGODB</h5>
+												  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+													<span aria-hidden="true">&times;</span>
+												  </button>
+												</div>
+												<div class="modal-body">
+												  ...
+												</div>
+												<div class="modal-footer">
+												  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+												  <button type="button" class="btn btn-primary">Save changes</button>
+												</div>
+											  </div>
+											</div>
+										  </div>
+				
+										  <div class="modal show" id="php" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+												<div class="modal-dialog modal-dialog-centered" role="document">
+												  <div class="modal-content">
+													<div class="modal-header">
+															<img src="assets/IMAGES/php2.png" class="mr-2" style="width:30px;height: 30px;" alt="">
+														<h5 class="modal-title" id="exampleModalLongTitle">PHP</h5>
+														
+													  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+													  </button>
+													</div>
+													<div class="modal-body">
+													  ...
+													</div>
+													<div class="modal-footer">
+													  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+													  <button type="button" class="btn btn-primary">Save changes</button>
+													</div>
+												  </div>
+												</div>
+											  </div>
+				
+											  <div class="modal show" id="mysql" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+													<div class="modal-dialog modal-dialog-centered" role="document">
+													  <div class="modal-content">
+														<div class="modal-header">
+																<img src="assets/IMAGES/mysql.png" class="mr-2" style="width:30px;height: 30px;" alt="">
+															<h5 class="modal-title" id="exampleModalLongTitle">MYSQL</h5>
+															
+														  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+															<span aria-hidden="true">&times;</span>
+														  </button>
+														</div>
+														<div class="modal-body">
+														  ...
+														</div>
+														<div class="modal-footer">
+														  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+														  <button type="button" class="btn btn-primary">Save changes</button>
+														</div>
+													  </div>
+													</div>
+												  </div>
+				
+												  <div class="modal show" id="c" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+														<div class="modal-dialog modal-dialog-centered" role="document">
+														  <div class="modal-content">
+															<div class="modal-header">
+																
+																<img src="assets/IMAGES/c++es.png" class="mr-2" style="width:30px;height: 30px;" alt="">
+																<h5 class="modal-title" id="exampleModalLongTitle">C++</h5>
+															  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																<span aria-hidden="true">&times;</span>
+															  </button>
+															</div>
+															<div class="modal-body">
+															  ...
+															</div>
+															<div class="modal-footer">
+															  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+															  <button type="button" class="btn btn-primary">Save changes</button>
+															</div>
+														  </div>
+														</div>
+													  </div>
+				
+													  <div class="modal show" id="python" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+															<div class="modal-dialog modal-dialog-centered" role="document">
+															  <div class="modal-content">
+																<div class="modal-header">
+																
+																	<img src="assets/IMAGES/pytones.jpeg" class="mr-2" style="width:30px;height: 30px;" alt="">
+																	<h5 class="modal-title" id="exampleModalLongTitle">PYTHON</h5>
+																  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																	<span aria-hidden="true">&times;</span>
+																  </button>
+																</div>
+																<div class="modal-body">
+																  ...
+																</div>
+																<div class="modal-footer">
+																  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+																  <button type="button" class="btn btn-primary">Save changes</button>
+																</div>
+															  </div>
+															</div>
+														  </div>
+				
+														  <div class="modal show" id="react" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+																<div class="modal-dialog modal-dialog-centered" role="document">
+																  <div class="modal-content">
+																	<div class="modal-header">
+																		
+																		<img src="assets/IMAGES/react.png" class="mr-2" style="width:30px;height: 30px;" alt="">
+																		<h5 class="modal-title" id="exampleModalLongTitle">REACT</h5>
+																	  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																		<span aria-hidden="true">&times;</span>
+																	  </button>
+																	</div>
+																	<div class="modal-body">
+																	  ...
+																	</div>
+																	<div class="modal-footer">
+																	  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+																	  <button type="button" class="btn btn-primary">Save changes</button>
+																	</div>
+																  </div>
+																</div>
+															  </div>
+				
+															  <div class="modal show" id="rnative" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+																	<div class="modal-dialog modal-dialog-centered" role="document">
+																	  <div class="modal-content">
+																		<div class="modal-header">
+																				<img src="assets/IMAGES/rnative.png" class="mr-2" style="width:30px;height: 30px;" alt="">
+																			<h5 class="modal-title" id="exampleModalLongTitle">REACT NATIVE</h5>
+																		
+																		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+																			<span aria-hidden="true">&times;</span>
+																		  </button>
+																		</div>
+																		<div class="modal-body">
+																		  ...
+																		</div>
+																		<div class="modal-footer">
+																		  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+																		  <button type="button" class="btn btn-primary">Save changes</button>
+																		</div>
+																	  </div>
+																	</div>
+																  </div>
+		</div>
+
+<div class="container-fluid mt-4 mb-4">
+	<div class="d-flex justify-content-center">
+<a href="" class="btn btn-lg rounded-0" style="color:midnightblue;background-color:white;border:2px solid midnightblue">START YOUR DIGITAL JOURNEY WITH US TODAY</a>
+	</div>
+</div>
+
+<div class="smessage mb-4" style="width:100%;height:100%;">
 	
 <div class="row">
+		<div class="col-lg-6 mt-4">
+
+				<div class="card  shadow-lg rounded-0">
+						<div class="container-fluid">
+							<h3 class="text-center mt-2" style="color:midnightblue">AFFORDABLE AND EFFECTIVE WEB AND MOBILE APP DESIGN AND DEVELOPEMENT</h3>
+							<p class="text-center font-weight-light">
+								We’re a small business too and we understand the need to balance cost with benefit – 
+								basically getting the most bang for your buck! We believe that most small businesses
+								 can be well served with custom web design that doesn’t break the bank.
+
+							</p>
+							<p class="text-center font-weight-light">
+									Whether you are after a simple brochure-style website to promote your services and generate leads
+									, or looking to set up an eCommerce website, we are a web design agency that will listen to your 
+									needs and goals to offer you a transparent and tailored solution.
+
+
+							</p>
+							<p class="text-center font-weight-light">
+									Don’t go for expensive. Don’t go for cheap. We are affordable and experienced, and can help your
+									 business succeed.
+
+							</p>
+							<p class="text-center font-weight-light">
+									Are you ready to work with an agency dedicated to providing you not only with an affordable small
+									 business website, but also working with you for your business success into the future?
+
+							</p>
+							<p class="text-center font-weight-light">
+									Looking for a small business website or eCommerce store that not only offers stunning visual
+									 appeal and mobile accessibility, but is also designed to convert your visitors into customers?
+									  Look no further!
+
+							</p>
+							<p class="text-center font-weight-light">
+									We want your business to succeed, so all our websites are built using years of experience in
+									 user experience, search engine best practices and conversion optimisation. We aim to help you 
+									 get more website traffic, leads and sales.
+ 
+							</p>
+							<button class="btn mt-2 mb-2 form-control btn-md" style="background-color:midnightblue;color:white">START A PROJECT</button>
+						</div>
+						
+							
+						</div>
+		</div>
 	<div class="col-lg-6">
 			<div class="container mt-4">
 					<div class="card shadow-lg rounded-0">
 						<div class="container-fluid">
-							<h2 class="text-center">MESSAGE US</h2>
-								<form action="/message">
+							<h3 class="text-center ,t-2" style="color:midnightblue">MESSAGE US</h3>
+								<form (submit)="sendMessage($event)">
 									<div class="form-group">
 										<label for="name" class="label-control">Name</label>
-										<input type="text" name="name" id="name" class="form-control pl-2 rounded-0">
+										<input type="text" style="border: 1px solid midnightblue" name="name" id="name" class="form-control pl-2 rounded-0">
 									</div>
 									<div class="form-group">
 											<label for="mobile" class="label-control">Mobile Number</label>
-											<input type="text" name="mobile" id="mobile" class="form-control rounded-0">
+											<input type="text" style="border: 1px solid midnightblue" name="mobile" id="mobile" class="form-control rounded-0">
 										</div>
 										<div class="form-group">
 												<label for="email" class="label-control">Email (optional)</label>
-												<input type="text" name="email" id="email" class="form-control rounded-0">
+												<input type="text" style="border: 1px solid midnightblue" name="email" id="email" class="form-control rounded-0">
 											</div>
 											<div class="form-group">
 													<label for="project" class="label-control">Message</label>
-													<textarea type="text" name="project" id="project" rows="10" class="form-control rounded-0"></textarea>
+													<textarea type="text" style="border: 1px solid midnightblue" name="message" id="message" rows="10" class="form-control rounded-0"></textarea>
 												</div>
-												<button class="btn btn-md rounded-0 form-control" style="background-color:midnightblue; color:white">SEND MESSAGE</button>
+												<button class="btn btn-md rounded-0 form-control" type="submit" style="background-color:midnightblue; color:white">SEND MESSAGE</button>
 									</form>
 						</div>
 						
@@ -216,31 +756,7 @@
 				</div>
 		
 	</div>
-	<div class="col-lg-6 mt-4">
-			<div class="card  shadow-lg rounded-0">
-					<div class="container-fluid">
-						<h3 class="text-center font-weight-light">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, officia maiores 
-							saepe alias ipsam nisi tempore, ipsa ipsum mollitia voluptatum nihil minima sit ullam sint,
-							 debitis ducimus ratione quos! Dolore.
-
-							 Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque eaque doloremque accusamus sequi odi
-							 o consequatur dolorum non dolore itaque minus assumenda natus aliquid, modi quam odit, ex iu
-							 re numquam! Temporibus?
-							 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex distinctio beatae dolor amet aperiam doloremque, p
-							 ossimus minus nemo officia perferendis sunt illum exercitationem quibusdam quam provident facilis
-							  inventore harum? Eaque?
-
-							  Lorem ipsum dolor, sit amet consectetur adipisicing elit. A quos dolores sit corrupti debitis quae harum eligen
-							   aspernatur saepe dolor consequatur accusantium doloribus impedit sequi quam laboriosam excepturi, 
-							   consectetur tenetur?
-						</h3>
-						<button class="btn mt-2 mb-2 form-control btn-md" style="background-color:midnightblue;color:white">START A PROJECT</button>
-					</div>
-					
-						
-					</div>
-	</div>
+	
 </div>
 </div>
 

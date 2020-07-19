@@ -23,6 +23,6 @@ ul li a {
 
 ul li a:hover {
     background-color:white;
-    color:midnightblue;
+    color:midnightblue !important;
 
  }

@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
+import {EmeraldService} from '../emerald.service';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-project',
@@ -7,9 +9,34 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectComponent implements OnInit {
 
-  constructor() { }
+target;
+name;
+mobile;
+email;
+ptype;
+project;
+file;
+selectedFile = [];
+filenames;
+  constructor(private eservice: EmeraldService) { }
 
   ngOnInit(): void {
   }
 
-}
+  onFileChanged(event) {
+    this.selectedFile = event.target.files;
+  }
+
+submitProject(event){
+  this.target = event.target;
+  this.name = this.target.querySelector('#name').value;
+  this.mobile = this.target.querySelector('#mobile').value;
+  this.email = this.target.querySelector('#email').value;
+  this.ptype = this.target.querySelector('#ptype').value;
+  this.project = this.target.querySelector('#project').value;
+  this.file = this.selectedFile;
+  console.log(this.file);
+  this.eservice.submitProject(this.name, this.mobile, this.email, this.ptype, this.project, this.file).subscribe(data => {
+    console.log('this is data ' + data);
+});
+}}

@@ -8,7 +8,7 @@
     <div class="card rounded-0 shadow-lg">
             <div class="container-fluid">
                     <h3 class="text-center mt-2">PLEASE TELL US WHAT YOU WANT, WE HAVE YOUR BEST INTEREST AT HEART</h3>
-                        <form action="/message">
+                        <form  enctype="multipart/form-data" (submit)="submitProject($event)">
                             <div class="form-group">
                                 <label for="name" class="label-control">Name</label>
                                 <input type="text" name="name" id="name" class="form-control pl-2 rounded-0">
@@ -23,7 +23,7 @@
                                     </div>
                                     <div class="form-group">
                                             <label class="label-control" for="project">Project Type</label>
-                                            <select class="form-control" id="exampleFormControlSelect2">
+                                            <select class="form-control" id="ptype">
                                                 <option selected>Select Project Type</option>
                                               <option value="business">Business/E-commerce Website</option>
                                               <option value="school">School website/Management System</option>
@@ -40,12 +40,12 @@
                                        
                                         <div class="form-group">
                                                 <label for="file" class="label-control">File/Image Upload (optional)</label>
-                                                <input type="file" name="file" id="file" class="form-control rounded-0">
+                                                <input type="file" multiple (change)="onFileChanged($event)" name="file" id="file" class="form-control rounded-0">
                                             </div>
 
 
                                             
-<button class="btn btn-md rounded-0 form-control" style="background-color:midnightblue; color:white">SUBMIT PROJECT</button>
+<button class="btn btn-md rounded-0 form-control" type="submit" style="background-color:midnightblue; color:white">SUBMIT PROJECT</button>
                             </form>
                 </div>
     </div>
