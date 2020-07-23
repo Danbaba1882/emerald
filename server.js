@@ -27,34 +27,35 @@ emerald.post('/api/message', (req,res)=>{
        
     })
 
-    const auth = {auth: {
-        api_key:'77a1d7ffd22352ace81b6d8b157c2685-46ac6b00-ac16df5a',
-        domain:'sandbox6b9442a86ae346899583077bfd8228fa.mailgun.org'
-    }}
+    //const auth = {auth: {
+        //api_key:'77a1d7ffd22352ace81b6d8b157c2685-46ac6b00-ac16df5a',
+        //domain:'sandbox6b9442a86ae346899583077bfd8228fa.mailgun.org'
+    //}}
     
-        var transporter = nodemailer.createTransport(mailGun(auth));
+       /* var transporter = nodemailer.createTransport(mailGun(auth));
            const mailOptions = {
             from: req.body.email+ ' '+req.body.mobile, // sender address
             to: 'emeraldstechub@gmail.com', // list of receivers
             subject: 'Subject of your email', // Subject line
             html: req.body.message+' <p>Your html here</p>'// plain text body
-          };
+          }; */
    
     Message.create(messages).then((savedMessage)=>{
         console.log('Saved '+ savedUser.username)
     }).catch((err)=>{
         if (err){
-            res.send(err)
+            res.json({success: false})
         }
 
         else{
-            transporter.sendMail(mailOptions, function (err, info) {
+            res.json({success: true})
+            /*transporter.sendMail(mailOptions, function (err, info) {
                 if(err)
                   res.send(err)
                 else
                   console.log(info);
-                  res.send('email sent and database has been updated')
-             }); 
+                  res.send('email sent and database has been updated') 
+             }); */
         }
     })
 })
@@ -81,7 +82,7 @@ emerald.post('/api/project', upload.array('file'), async (req,res)=>{
         file: req.files
     })
 
-    const auth = {auth: {
+    /* const auth = {auth: {
         api_key:'77a1d7ffd22352ace81b6d8b157c2685-46ac6b00-ac16df5a',
         domain:'sandbox6b9442a86ae346899583077bfd8228fa.mailgun.org'
     }}
@@ -92,23 +93,24 @@ emerald.post('/api/project', upload.array('file'), async (req,res)=>{
             to: 'emeraldstechub@gmail.com', // list of receivers
             subject: 'Subject of your email', // Subject line
             html: req.body.project+' <p>Your html here</p>'// plain text body
-          };
+          }; */
    
     await Project.create(projects).then((savedProject)=>{
         console.log('Saved '+ savedUser.username)
     }).catch((err)=>{
         if (err){
-            res.send(err)
+            res.json({success:false})
         }
 
         else{
-            transporter.sendMail(mailOptions, function (err, info) {
+            res.json({success:true})
+           /* transporter.sendMail(mailOptions, function (err, info) {
                 if(err)
                   res.send(err)
                 else
                   console.log(info);
                   res.send('email sent and project database has been updated')
-             }); 
+             }); */
         }
     })
 })

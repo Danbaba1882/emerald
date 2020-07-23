@@ -8,7 +8,7 @@ import {EmeraldService} from '../emerald.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
+title = 'Emerald Tech Hub';
 target;
 name;
 mobile;

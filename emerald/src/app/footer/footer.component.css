@@ -26,3 +26,9 @@ ul li a:hover {
     color:midnightblue !important;
 
  }
+
+ @media (max-width:575px){
+     .s{
+         margin-top:5px;
+     }
+ }

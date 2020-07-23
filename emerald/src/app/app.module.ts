@@ -24,6 +24,7 @@ import { EmailmComponent } from './emailm/emailm.component';
 import { WebComponent } from './web/web.component';
 import { SmsComponent } from './sms/sms.component';
 import { OrgComponent } from './org/org.component';
+import { EthereumComponent } from './ethereum/ethereum.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { OrgComponent } from './org/org.component';
     EmailmComponent,
     WebComponent,
     SmsComponent,
-    OrgComponent
+    OrgComponent,
+    EthereumComponent
   ],
   imports: [
     HttpClientModule,
@@ -68,7 +70,8 @@ import { OrgComponent } from './org/org.component';
       { path: 'services/social-media-marketing', component: SmmComponent },
       { path: 'services/search-engine-optimisation', component: SeoComponent },
       { path: 'services/mobile-and-progressive-web-applications', component: MappsComponent },
-      { path: 'services/school-websites-and-management-systems', component: SmsComponent }
+      { path: 'services/school-websites-and-management-systems', component: SmsComponent },
+      { path: 'services/blockchain-apps-and-smart-contracts', component: EthereumComponent}
     ])
   ],
   providers: [],
