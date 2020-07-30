@@ -1,5 +1,7 @@
 import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 import {EmeraldService} from '../emerald.service';
+declare var jQuery: any;
+import * as bootstrap from 'bootstrap';
 import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
@@ -16,6 +18,8 @@ email;
 ptype;
 project;
 file;
+success;
+successmessage;
 selectedFile = [];
 filenames;
   constructor(private eservice: EmeraldService) { }
@@ -37,6 +41,9 @@ submitProject(event){
   this.file = this.selectedFile;
   console.log(this.file);
   this.eservice.submitProject(this.name, this.mobile, this.email, this.ptype, this.project, this.file).subscribe(data => {
+    this.successmessage = data;
+    this.success = this.successmessage.success;
+    console.log(this.success);
     console.log('this is data ' + data);
 });
 }}
