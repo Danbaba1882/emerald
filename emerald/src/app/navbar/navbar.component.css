@@ -15,6 +15,32 @@
   
 }
 
+.dropdown:hover > .dropdown-menu{
+  display: block !important;
+}
+
+.dropdown:hover > #navbarDropdown{
+  color:white !important;
+  background-color: midnightblue !important;
+  padding-bottom: 10px;
+}
+
+.dropdown-item{
+  color: white;
+}
+.dropdown-menu{
+  background-color: midnightblue !important;
+}
+
+.dropdown-item:hover{
+  color: midnightblue !important;
+}
+
+.s:hover {
+  background-color: midnightblue !important;
+}
+
+
 @media (max-width: 992px) {
     .mobileMenu {
       -webkit-transform: translateX(-100%);
