@@ -24,7 +24,6 @@ emerald.post('/api/message', (req,res)=>{
         mobile: req.body.mobile,
         email:req.body.email,
         message:req.body.message
-       
     })
 
     //const auth = {auth: {

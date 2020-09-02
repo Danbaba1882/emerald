@@ -72,7 +72,11 @@ import { EthereumComponent } from './ethereum/ethereum.component';
       { path: 'services/mobile-and-progressive-web-applications', component: MappsComponent },
       { path: 'services/school-websites-and-management-systems', component: SmsComponent },
       { path: 'services/blockchain-apps-and-smart-contracts', component: EthereumComponent}
-    ])
+    ],
+    {
+      scrollPositionRestoration: 'enabled'
+    }
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]
